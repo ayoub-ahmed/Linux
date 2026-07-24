@@ -207,15 +207,15 @@ A long listing contains several fields describing the file.
 
 # Table 3-2: Long Listing Fields for `ls` 📋
 
-|Field|Meaning|
-|---|---|
-|`-rw-r--r--` 🔐|File access rights. The first character indicates the file type. A `-` means a regular file, while `d` means a directory. The next three characters represent the owner's permissions, the next three represent the group permissions, and the final three represent permissions for everyone else.|
-|`1`|Number of hard links associated with the file.|
-|`root`|Username of the file owner.|
-|`root`|Name of the group that owns the file.|
-|`32059`|File size in bytes.|
-|`2017-04-03 11:05`|Date and time of the last modification.|
-|`oo-cd-cover.odf`|Name of the file.|
+| Field              | Meaning                                                                                                                                                                                                                                                                                             |
+| ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `-rw-r--r--` 🔐    | File access rights. The first character indicates the file type. A `-` means a regular file, while `d` means a directory. The next three characters represent the owner's permissions, the next three represent the group permissions, and the final three represent permissions for everyone else. |
+| `1`                | Number of hard links associated with the file.                                                                                                                                                                                                                                                      |
+| `root`             | Username of the file owner.                                                                                                                                                                                                                                                                         |
+| `root`             | Name of the group that owns the file.                                                                                                                                                                                                                                                               |
+| `32059`            | File size in bytes.                                                                                                                                                                                                                                                                                 |
+| `2017-04-03 11:05` | Date and time of the last modification.                                                                                                                                                                                                                                                             |
+| `oo-cd-cover.odf`  | Name of the file.                                                                                                                                                                                                                                                                                   |
 
 ---
 
@@ -447,18 +447,18 @@ q
 
 # Table 3-3: `less` Commands ⌨️
 
-|Command|Action|
-|---|---|
-|`PAGE UP` or `b`|Scroll back one page|
-|`PAGE DOWN` or `SPACE`|Scroll forward one page|
-|`↑` Up arrow|Scroll up one line|
-|`↓` Down arrow|Scroll down one line|
-|`G`|Move to the end of the text file|
-|`1G` or `g`|Move to the beginning of the text file|
-|`/characters`|Search forward for characters|
-|`n`|Search for the next occurrence of the previous search|
-|`h`|Display help screen|
-|`q`|Quit `less`|
+| Command                | Action                                                |
+| ---------------------- | ----------------------------------------------------- |
+| `PAGE UP` or `b`       | Scroll back one page                                  |
+| `PAGE DOWN` or `SPACE` | Scroll forward one page                               |
+| `↑` Up arrow           | Scroll up one line                                    |
+| `↓` Down arrow         | Scroll down one line                                  |
+| `G`                    | Move to the end of the text file                      |
+| `1G` or `g`            | Move to the beginning of the text file                |
+| `/characters`          | Search forward for characters                         |
+| `n`                    | Search for the next occurrence of the previous search |
+| `h`                    | Display help screen                                   |
+| `q`                    | Quit `less`                                           |
 
 ---
 
@@ -572,35 +572,35 @@ If a command produces an error, simply continue exploring.
 
 # Table 3-4: Directories on Linux Systems 📁
 
-|Directory|Comments|
-|---|---|
-|`/`|The root directory where everything begins.|
-|`/bin`|Contains essential binary programs required for the system to boot and run. Modern Linux distributions have replaced it with `/usr/bin`.|
-|`/boot`|Contains the Linux kernel, initial RAM disk image, and boot loader files. Important files include `/boot/grub/grub.cfg` and `/boot/vmlinuz`.|
-|`/dev`|Contains device nodes. Linux treats devices as files, and the kernel maintains information about devices here.|
-|`/etc`|Contains system-wide configuration files. Examples include `/etc/crontab`, `/etc/fstab`, and `/etc/passwd`.|
-|`/home`|Contains user home directories. Normal users can write files only in their own home directories.|
-|`/lib`|Contains shared libraries used by core system programs. Similar to Windows DLL files. Modern systems use `/usr/lib`.|
-|`/lost+found`|Used for filesystem recovery after corruption. Usually remains empty unless a recovery event occurs.|
-|`/media`|Contains mount points for removable media such as USB drives and CD-ROMs.|
-|`/mnt`|Contains mount points for manually mounted devices.|
-|`/opt`|Used for installing optional software, often third-party applications.|
-|`/proc`|A virtual filesystem maintained by the Linux kernel. Provides information about the kernel and hardware.|
-|`/root`|Home directory of the root user.|
-|`/run`|Stores runtime data in memory using tmpfs. Modern replacement for some uses of `/tmp`.|
-|`/sbin`|Contains system administration binaries used for important system tasks. Modern systems use `/usr/sbin`.|
-|`/sys`|Contains detailed information about hardware devices detected by the kernel.|
-|`/tmp`|Stores temporary files created by programs. Some distributions clear it during reboot.|
-|`/usr`|Contains programs and support files used by normal users. One of the largest directories on Linux systems.|
-|`/usr/bin`|Contains executable programs installed by the Linux distribution.|
-|`/usr/lib`|Contains shared libraries used by programs in `/usr/bin`.|
-|`/usr/local`|Contains software installed manually by administrators, commonly from source code.|
-|`/usr/sbin`|Contains additional system administration programs.|
-|`/usr/share`|Contains shared data used by programs, such as configuration files, icons, backgrounds, and sound files.|
-|`/usr/share/doc`|Contains documentation files organized by installed packages.|
-|`/var`|Stores data that changes frequently, such as databases, print queues, and user mail.|
-|`/var/log`|Contains system log files used for monitoring and troubleshooting.|
-|`~/.config` and `~/.local`|Store user-specific configuration and application state data for desktop applications.|
+| Directory                  | Comments                                                                                                                                     |     |
+| -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | --- |
+| `/`                        | The root directory where everything begins.                                                                                                  |     |
+| `/bin`                     | Contains essential binary programs required for the system to boot and run. Modern Linux distributions have replaced it with `/usr/bin`.     |     |
+| `/boot`                    | Contains the Linux kernel, initial RAM disk image, and boot loader files. Important files include `/boot/grub/grub.cfg` and `/boot/vmlinuz`. |     |
+| `/dev`                     | Contains device nodes. Linux treats devices as files, and the kernel maintains information about devices here.                               |     |
+| `/etc`                     | Contains system-wide configuration files. Examples include `/etc/crontab`, `/etc/fstab`, and `/etc/passwd`.                                  |     |
+| `/home`                    | Contains user home directories. Normal users can write files only in their own home directories.                                             |     |
+| `/lib`                     | Contains shared libraries used by core system programs. Similar to Windows DLL files. Modern systems use `/usr/lib`.                         |     |
+| `/lost+found`              | Used for filesystem recovery after corruption. Usually remains empty unless a recovery event occurs.                                         |     |
+| `/media`                   | Contains mount points for removable media such as USB drives and CD-ROMs.                                                                    |     |
+| `/mnt`                     | Contains mount points for manually mounted devices.                                                                                          |     |
+| `/opt`                     | Used for installing optional software, often third-party applications.                                                                       |     |
+| `/proc`                    | A virtual filesystem maintained by the Linux kernel. Provides information about the kernel and hardware.                                     |     |
+| `/root`                    | Home directory of the root user.                                                                                                             |     |
+| `/run`                     | Stores runtime data in memory using tmpfs. Modern replacement for some uses of `/tmp`.                                                       |     |
+| `/sbin`                    | Contains system administration binaries used for important system tasks. Modern systems use `/usr/sbin`.                                     |     |
+| `/sys`                     | Contains detailed information about hardware devices detected by the kernel.                                                                 |     |
+| `/tmp`                     | Stores temporary files created by programs. Some distributions clear it during reboot.                                                       |     |
+| `/usr`                     | Contains programs and support files used by normal users. One of the largest directories on Linux systems.                                   |     |
+| `/usr/bin`                 | Contains executable programs installed by the Linux distribution.                                                                            |     |
+| `/usr/lib`                 | Contains shared libraries used by programs in `/usr/bin`.                                                                                    |     |
+| `/usr/local`               | Contains software installed manually by administrators, commonly from source code.                                                           |     |
+| `/usr/sbin`                | Contains additional system administration programs.                                                                                          |     |
+| `/usr/share`               | Contains shared data used by programs, such as configuration files, icons, backgrounds, and sound files.                                     |     |
+| `/usr/share/doc`           | Contains documentation files organized by installed packages.                                                                                |     |
+| `/var`                     | Stores data that changes frequently, such as databases, print queues, and user mail.                                                         |     |
+| `/var/log`                 | Contains system log files used for monitoring and troubleshooting.                                                                           |     |
+| `~/.config` and `~/.local` | Store user-specific configuration and application state data for desktop applications.                                                       |     |
 
 ---
 
